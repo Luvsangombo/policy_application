@@ -1,0 +1,33 @@
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{"email": "johnx@gmail.com"}
+
+###
+
+POST http://localhost:3000/signup
+Content-Type: application/json
+
+{"email": "johndoe@gmail.com", "lname":"John", "fname":"Doe", "entry_year": "2024-08-06"}
+
+###
+
+GET http://localhost:3000/policies
+Content-Type: application/json
+
+###
+
+POST http://localhost:3000/policies
+Content-Type: application/json
+Authorization: eyJlbWFpbCI6ImpvaG5kb2VAZ21haWwuY29tIn0=.abfcadf9c56e2256bc35c02357db41a1b7add6d2e76a66d1737600246ea7cab5
+
+
+{"description": "lorem ipsum", "title":"dorm policy", "category": "dorm"}
+
+###
+POST http://localhost:3000/vote
+Content-Type: application/json
+Authorization: eyJlbWFpbCI6ImpvaG5kb2VAZ21haWwuY29tIn0=.abfcadf9c56e2256bc35c02357db41a1b7add6d2e76a66d1737600246ea7cab5
+
+
+{"policy_id": 1}
