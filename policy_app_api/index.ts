@@ -3,7 +3,7 @@ import express, { json } from 'express';
 import morgan from 'morgan';
 import cors from 'cors';
 import router from './router';
-import error_handler from "./middlewares/error_handler";
+import error_handler from "./src/middlewares/error_handler";
 
 const app = express();
 

@@ -1,4 +1,4 @@
-import connection from "./db_connection";
+import connection from "./src/config/db_connection";
 
 
 

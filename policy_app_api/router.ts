@@ -1,7 +1,7 @@
 import { Router } from "express";
-import { signup, login } from "./controllers/users";
-import { get, create, vote } from "./controllers/policies";
-import { checkToken } from "./middlewares/auth";
+import { signup, login } from "./src//controllers/users";
+import { get, create, vote } from "./src/controllers/policies";
+import { checkToken } from "./src/middlewares/auth";
 
 
 const router = Router({ mergeParams: true });
